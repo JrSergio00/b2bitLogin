@@ -1,0 +1,104 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--whiteBackground2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5em;
+
+}
+
+.container header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: end;
+    padding: .8em 4em;
+    background-color: var(--white);
+
+
+    & button {
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        border-radius: .5em;
+        width: 20%;
+        border: none;
+        background-color: var(--b2bitBlue);
+        color: var(--white);
+        font-size: medium;
+        transition: 0.3s;
+    }
+
+    & button:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+}
+
+.container main {
+    width: 30%;
+    height: 25em;
+    padding: 1em;
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    & picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5em;
+
+        & img {
+            border-radius: 1em;
+            height: 6em;
+            width: 6em;
+            object-fit: cover;
+        }
+    }
+
+
+    & div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+
+        & div {
+            width: 100%;
+
+            & p {
+                text-align: center;
+                background-color: var(--white3);
+                border: none;
+                padding: .6em;
+                height: 3em;
+                border-radius: .5em;
+            }
+        }
+    }
+
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}

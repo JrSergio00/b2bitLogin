@@ -1,0 +1,75 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--whiteBackground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container main{
+    width: 30%;
+    height: 35em;
+    padding: 1em;
+    border-radius: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: var(--blackShadow) 0px 0px 64px 0px;
+}
+.container main form{
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1em;
+    
+    & fieldset label, 
+    & fieldset input,
+    & button,
+    & p{
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+    & fieldset{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+    }
+    & fieldset label{
+        font-weight: 700;
+    }
+    & p{
+        width: 100%;
+        text-align: center;
+    }
+    & fieldset input{
+        background-color: var(--white3);
+        border: none;
+        padding: .6em;
+        height: 3em;
+        border-radius: .5em;
+    }
+    & button{
+        padding: 1% 0;
+        border-radius: .5em;
+        width: 100%;
+        border: none;
+        background-color: var(--b2bitBlue);
+        color: var(--white);
+        font-size: medium;
+        transition: 0.3s;
+    }
+    & button:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+}
